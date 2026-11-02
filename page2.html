@@ -17,6 +17,13 @@
        img.src = sel.options[sel.selectedIndex].value;
        //선택한 리스트의 위치의 값으로 img 태그의 src속성을 변경해라
      }
+      function drawImage1()
+     {
+       let sel = document.getElementById('lunch menu');  //선택리스트 id
+       let img = document.getElementById('fimg1');  //이미지를 바꿀이미지 id
+       img.src = sel.options[sel.selectedIndex].value;
+       //선택한 리스트의 위치의 값으로 img 태그의 src속성을 변경해라
+     }
     
   </script>
   </head>
@@ -32,7 +39,7 @@
       <img id = 'fimg' src='banana.png' alt='설명문' width=100 height=100>
     </form>
     <br>
-    주제2.오늘 점심 메뉴 선택 - 각자 해 보세요 (메뉴5)<br>
+    주제2.오늘 점심 메뉴 선택  <br>
     <form>
       <select id='lunch menu' onchange='drawImage1()'>
         <option value='ramen.png'> 라면</option> 
@@ -44,5 +51,18 @@
       <img id = 'fimg1' src='rice.png' alt='설명문' width=100 height=100>
     </form>
     <br>
+    주제3.치이카와 선택 <br>
+     <form>
+      <select id='lunch menu' onchange='drawImage2()'>
+        <option value='ramen.png'> 라면</option> 
+        <option value='rice.png' selected> 쌀밥</option> 
+        <option value='chicken.png'> 치킨</option>
+        <option value='hotdog.png' selected> 핫도그</option> 
+        <option value='donut.png'> 도넛</option>
+      </select>
+      <img id = 'fimg2' src='rice.png' alt='설명문' width=100 height=100>
+    </form>
+    <br>
+    
   </body>
 </html>
